@@ -1,0 +1,118 @@
+
+/* GENERAL DESIGN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3eee4;
+    color: #29251f;
+}
+
+/* HEADER */
+.gallery-header {
+    text-align: center;
+    padding: 65px 20px 45px;
+    position: relative;
+}
+
+.back-link {
+    display: inline-block;
+    color: #a47b52;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.back-link:hover {
+    color: #29251f;
+}
+
+.eyebrow {
+    color: #a47b52;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.gallery-header h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #756d64;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* VIDEO GALLERY */
+.gallery-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px 70px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.video-card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+.video-card iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    background: #eee8df;
+}
+
+.video-card h3 {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #5b4533;
+}
+
+/* FOOTER */
+footer {
+    background: #a47b52;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 700px) {
+
+    .gallery-header h1 {
+        font-size: 28px;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        padding: 20px 15px 50px;
+    }
+
+}
